@@ -13,6 +13,7 @@
 extern "C" {
 #endif
 
+// 一定要使用 __stdcall 否则易语言调用会导致堆栈错误
 EXPORT_API int __stdcall getBkn(const char* skey);
 
 #ifdef __cplusplus

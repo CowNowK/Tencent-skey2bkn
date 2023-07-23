@@ -6,6 +6,7 @@
     #define EXPORT_API
 #endif
 
+// 一定要使用 __stdcall 否则易语言调用会导致堆栈错误
 EXPORT_API int __stdcall getBkn(const char* skey) {
     int hash_value = 5381;
     for (const char* c = skey; *c != '\0'; ++c) {
